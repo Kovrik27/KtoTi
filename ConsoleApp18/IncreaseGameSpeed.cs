@@ -16,5 +16,6 @@ namespace ConsoleApp18
             if (speed < 10)
                 speed = 10;
         }
+
     }
 }

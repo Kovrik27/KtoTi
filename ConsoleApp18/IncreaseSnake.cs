@@ -14,5 +14,12 @@ namespace ConsoleApp18
             int[] last = { snake.Last()[0], snake.Last()[1] };
             snake.Add(last);
         }
+        private static void DecreaseSnake()
+        {
+            var index = snake.Count - 1;
+            graphics.FillEllipse(System.Drawing.Brushes.Black, snake[index][0], snake[index][1], 10, 10);
+            snake.RemoveAt(snake.Count - 1);
+
+        }
     }
 }

@@ -10,8 +10,17 @@ namespace ConsoleApp18
     {
         private static bool SnakeEatApple()
         {
-            return apple[0] == snake[0][0] && apple[1] == snake[0][1];
-            //
+            return (apple[0] == snake[0][0] && apple[1] == snake[0][1]);
+        }
+        private static bool SnakeEatFuapple()
+        {
+            return (Fuapple[0] == snake[0][0] && Fuapple[1] == snake[0][1]);
+
+            if (snake.Count == 1 & Fuapple[0] == snake[0][0] && Fuapple[1] == snake[0][1])
+            {
+                GameOver();
+            }
         }
     }
 }
+
