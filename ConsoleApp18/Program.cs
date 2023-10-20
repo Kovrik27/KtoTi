@@ -78,7 +78,7 @@ namespace ConsoleApp18
                 if (CheckSnakeIntersect()) // проверка на то, что змейка пересекла себя
                 {
                     GameOver(); // стоп игры и вывод итогов
-                    Console.WriteLine("Начать игру заново? (Da/Net");
+                    Console.WriteLine("Начать игру заново? (Da/Net)");
                     string continune = Console.ReadLine();
                     if (continune == "Da" || continune == "da")
                     {

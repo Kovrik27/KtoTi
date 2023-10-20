@@ -14,12 +14,13 @@ namespace ConsoleApp18
         }
         private static bool SnakeEatFuapple()
         {
-            return (Fuapple[0] == snake[0][0] && Fuapple[1] == snake[0][1]);
 
             if (snake.Count == 1 & Fuapple[0] == snake[0][0] && Fuapple[1] == snake[0][1])
             {
                 GameOver();
             }
+            return (Fuapple[0] == snake[0][0] && Fuapple[1] == snake[0][1]);
+
         }
     }
 }

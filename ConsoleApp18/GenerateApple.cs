@@ -16,7 +16,7 @@ namespace ConsoleApp18
             // назначить полученные числа в координаты apple
             // нарисовать зеленый круг размером 10 на 10 по новым координатам
             for (int i = 0; i < 2; i++)
-                apple[i] = random.Next(0, 20);
+                apple[i] = random.Next(2, 27);
 
             if (apple != snake[0])
             {
@@ -40,13 +40,13 @@ namespace ConsoleApp18
                 {
                     firstPrint = false;
                 }
-                else if (chance < 0.1)// если шанс в chance меньше 0.1, то яблоко рисуется 
+                else if (chance < 0.5)// если шанс в chance меньше 0.5, то яблоко рисуется 
                 {
                     do// проверка на совпадение яблока с змейкой
                     {
 
                         for (int j = 0; j < 2; j++)
-                            Fuapple[j] = random.Next(0, 20);
+                            Fuapple[j] = random.Next(2, 27);
                         Fuapple[0] = Fuapple[0] * 10;
                         Fuapple[1] = Fuapple[1] * 10;
                         graphics.FillEllipse(System.Drawing.Brushes.Yellow, Fuapple[0], Fuapple[1], 10, 10); // создает несколько яблок, но только одно из них
